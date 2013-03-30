@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.clearing {clear:both;}
+
+.layer {width:100%; margin-top:10px; position:relative;}
+.container {margin:0 auto; width:1000px;}
+
+.header {width:100%; height:80px; margin-bottom:10px; padding-top:20px; text-align:center;}
+.sidebar {width:290px; float:left; padding:5px;}
+.sidebar ul {margin:0; padding:0;}
+.sidebar ul li {list-style:none;}
+.content {width:676px; float:left; margin-left:10px; padding:5px;}
+.footer {width:100%; height:20px; padding-top:5px; text-align:center;}
