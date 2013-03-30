@@ -3,4 +3,11 @@
 	<input type="text" class="input-small" placeholder="Откуда">
 	<input type="text" class="input-small" placeholder="Куда">
 	<button type="submit" class="btn">Фасс!</button>
+	<br>
+	<?php
+	foreach($trains as $train)
+	{
+		echo $train->id .'-' . $train->actual_to .'<br />';
+	}
+	?>
 </form>

@@ -5,7 +5,15 @@ class Controller_Home extends  Controller_Common {
 	public function action_index()
 	{
 
-		$content = $this->response->body(View::factory('home'));
+		$train = new Model_Train();
+
+		$trains = $train -> find_all();
+
+		$home = View::factory('home');
+
+		$home->trains = $trains;
+
+		$content = $this->response->body($home);
 
 		$this->template->content = $content;
 
